@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: gray;
+        }
+        nav{
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+
+        }
+        
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: yellow;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:hover{
+          color: white;
+        }
+        #cards{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            top: 100px;
+            
+        }
+        
+        h1{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: black;
+          position: relative;
+          top: 10px;
+        }
+        .card-buttons {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+    .card-buttons button {
+      padding: 10px 15px;
+      font-size: 14px;
+      color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .buy-button {
+      background-color:blue;
+      border: #333;
+    
+    }
+    .buy-button:hover {
+      background-color: #218838;
+    }
+    .cart-button {
+      background-color: blue;
+    }
+    .cart-button:hover {
+      background-color: yellow;
+      color: black;
+    }
+        
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <li><a href="">Home</a></li>
+        <li><a href="">Categories</a></li>
+        <li><a href="">Cart</a></li>
+    </nav>
+    <h1>Kid's Collection..!</h1>
+   <div id="cards">
+    <div class="card" style="width: 18rem; background-color: black; color: white; border-radius: 10px;">
+      <img src="https://cdn.pixabay.com/photo/2019/09/03/01/51/child-4448370_640.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+
+        <div class="card-body">
+          <h5 class="card-title">Shirts</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="card-buttons">
+            <button class="buy-button">Buy</button>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; background-color: black; color: white;border-radius: 10px;">
+        <img src="https://cdn.pixabay.com/photo/2018/07/31/20/53/footwear-3575910_640.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <div class="card-body">
+          <h5 class="card-title">Shoes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="card-buttons">
+            <button class="buy-button">Buy</button>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>  
+      <div class="card" style="width: 18rem; background-color: black; color: white; border-radius: 10px;">
+        <img src="https://cdn.pixabay.com/photo/2021/09/16/09/01/kid-6629599_640.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <div class="card-body">
+          <h5 class="card-title">Jackets</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="card-buttons">
+            <button class="buy-button">Buy</button>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

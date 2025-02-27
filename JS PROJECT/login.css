@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;  
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body {
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#login-container {
+    background-color:white;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+  
+}
+
+
+h1 {
+    color:black;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+#form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: white;
+    /* transition: all 0.3s ease; */
+}
+
+input:focus {
+    border-color: black;
+    background-color: white;
+}
+
+.errors {
+    color: red;
+    font-size: 12px;
+}
+
+
+.submit-btn {
+    background-image: linear-gradient(to right, orange,yellow);
+    background-color:aqua;
+    color: black;
+    padding: 12px 0;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+.form-footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

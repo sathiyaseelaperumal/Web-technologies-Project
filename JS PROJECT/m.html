@@ -1,0 +1,344 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Men's Fashion</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <style>
+        *{
+            margin: 0;
+           
+        }
+        body{
+            background-color: gray;
+        }
+        nav{
+            background-color: black;
+            height: 50px;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        li{
+            list-style: none;
+           
+
+        }
+        a{
+            text-decoration: none;
+            color: yellow;
+            font-size: large;
+            font-family:fantasy;
+            
+           
+        }
+        a:hover{
+         background-color: white;
+           
+        }
+       
+        #cards{
+         display: flex;
+         justify-content:space-around;
+         align-items: center;
+         position: relative;
+         top: 100px;
+         /* border: 10px solid white; */
+        
+            
+        }
+        #button{
+            position: relative;
+            right: 100px;
+            
+        }
+        #btn{
+            position: relative;
+            left: 50px;
+        }
+        #btn :hover{
+            background-color: yellow;
+            color: black;
+        }
+      
+
+     </style>
+
+
+</head>
+<body>
+    <nav>
+      <li><a href="">Home</a></li>
+      <li><a href="">Categories</a></li>
+      <li><a href="">Cart</a></li>
+          
+    </nav>
+
+     <div id="cards">
+        <div class="card" style="width: 18rem; background-color: black; color: white; border-radius: 10px;">
+            <img src="https://cdn.pixabay.com/photo/2024/06/13/05/31/men-8826710_640.jpg" class="card-img-top" alt="..." style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <div class="card-body" >
+              <h5 class="card-title">Shirts</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="btn">
+                <button class="btn btn-primary" type="button">Buy</button>
+                <button class="btn btn-primary" type="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: black; color: white; border-radius: 10px;">
+            <img src="https://cdn.pixabay.com/photo/2021/03/03/10/35/man-6065000_1280.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            
+            <div class="card-body">
+              <h5 class="card-title">Jackets</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="btn">
+                <button class="btn btn-primary" type="button">Buy</button>
+                <button class="btn btn-primary" type="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;background-color: black; color: white; border-radius: 10px;">
+            <img src="https://media.istockphoto.com/id/1292261872/photo/young-man-shopping-shoes.jpg?s=2048x2048&w=is&k=20&c=r2ixPG7_MboKol-advBQU1IOxwJtRwT3emFMKTPuL-0=" class="card-img-top" alt="..." style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <div class="card-body">
+              <h5 class="card-title">Shoes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="btn">
+                <button class="btn btn-primary" type="button" >Buy</button>
+                <button class="btn btn-primary" type="button">Add to cart</button>
+              </div>
+            </div>
+      
+        </div>
+       
+      </div>
+      
+      <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#fcb900"></stop><stop offset="95%" stop-color="#eb144c"></stop></linearGradient></defs><path d="M 0,600 L 0,150 C 108.36363636363635,166.36363636363637 216.7272727272727,182.72727272727272 299,190 C 381.2727272727273,197.27272727272728 437.4545454545455,195.45454545454544 532,166 C 626.5454545454545,136.54545454545456 759.4545454545454,79.45454545454545 864,90 C 968.5454545454546,100.54545454545455 1044.7272727272727,178.72727272727272 1136,200 C 1227.2727272727273,221.27272727272728 1333.6363636363635,185.63636363636363 1440,150 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#fcb900"></stop><stop offset="95%" stop-color="#eb144c"></stop></linearGradient></defs><path d="M 0,600 L 0,350 C 98.04784688995213,381.933014354067 196.09569377990425,413.86602870813397 304,390 C 411.90430622009575,366.13397129186603 529.665071770335,286.46889952153106 612,289 C 694.334928229665,291.53110047846894 741.2440191387559,376.25837320574163 830,406 C 918.7559808612441,435.74162679425837 1049.3588516746413,410.4976076555024 1158,392 C 1266.6411483253587,373.5023923444976 1353.3205741626793,361.7511961722488 1440,350 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+      
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        
+        nav {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav>div:nth-child(1) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        
+        nav li {
+            list-style: none;
+        }
+        
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: black;
+        }
+        
+        h3 {
+            color: white;
+        }
+        
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        .card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: black;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        
+        .card h3 {
+            margin: 0 0 10px;
+        }
+        
+        .card p {
+            margin: 0 0 15px;
+            color: white;
+        }
+        
+        .card button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .buy-now {
+            background-color: white;
+            color: black;
+        }
+        
+        .add-to-cart {
+            background-color: white;
+            color: black;
+        }
+        
+        .buy-now:hover {
+            background-color: yellow;
+        }
+        
+        .add-to-cart:hover {
+            background-color: yellowgreen;
+        }
+        
+        #dropdown {
+            position: relative;
+            list-style: none;
+        }
+        
+        #dropdown>li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        #dropdown-menu {
+            position: absolute;
+            display: none;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 5px solid #408df2;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            z-index: 10;
+        }
+        
+        #dropdown:hover #dropdown-menu {
+            display: block;
+        }
+        
+        #dropdown-menu a {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+        
+        #dropdown-menu li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        #dropdown-menu li:hover {
+            background-color: #c1f0f4;
+        }
+        
+        #dropdown-menu li>a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <li><a href="" id="home">Home</a></li>
+            <div id="dropdown">
+                <li><a href="#">Category</a></li>
+                <div id="dropdown-menu">
+                    <li><a href="" id="shirts">Shirts</a></li>
+                    <li><a href="" id="shoes">Shoes</a></li>
+                    <li><a href="" id="trousers">Trousers</a></li>
+                    <li><a href="" id="kurta">Kurta</a></li>
+                </div>
+            </div>
+            <li><a href="#">Cart</a></li>
+        </div>
+    </nav>
+
+    <h1>Welcome to Men's Collection!</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/w/p/xxl-ts85-vebnor-original-imah7n774asgyhbr.jpeg?q=70" alt="Product 1">
+            <h3>T-shirt</h3>
+            <p>Crafted with premium fabrics, our collection ensures both elegance and durability.</p>
+            <button class="buy-now">Buy Now</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/8/8/b/6-rng-512-black-40-bruton-black-original-imah4ur2zy9kfzmz.jpeg?q=70" alt="Product 2">
+            <h3>Sports Shoes</h3>
+            <p>Designed for comfort and performance, our shoes are perfect for every walk of life.</p>
+            <button class="buy-now">Buy Now</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/j/6/e/32-cyfor-a-cyphus-original-imah48sjfzchtjvw.jpeg?q=70" alt="Product 3">
+            <h3>Trousers</h3>
+            <p>Perfectly tailored for versatility, our trousers suit every occasion effortlessly.</p>
+            <button class="buy-now">Buy Now</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="mens.js"></script>
+</body>
+
+</html>

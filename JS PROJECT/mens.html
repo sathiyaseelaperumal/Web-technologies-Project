@@ -1,0 +1,270 @@
+<!-- <html lang="en">
+    <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+  nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            color: white;
+        } 
+        #a{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none    ;
+        }
+      
+
+a{
+    color: yellow;
+    text-decoration: none;
+}
+
+   
+
+    </style>
+</head>
+<body>
+
+     <nav>
+    
+        <div id="a">
+            <li><a href="">Home</a></li>
+            <li><a href="">Categiry</a></li>
+            <li><a href="">Cart</a></li>
+        </div>
+    
+</nav>
+
+
+
+<div class="card-group">
+    <div class="card">
+      <img src="https://getketchadmin.getketch.com/product/8905404264589/660/KHSH000262_1.jpg" class="card-img-top" alt="..." height="400px"  >
+      <div class="card-body" style="height: 40px;">
+        <h5 class="card-title">Men's</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="#" class="btn btn-primary">Buy</a>
+        <a href="#" class="btn btn-primary">Add cart</a>
+      </div>
+    </div>  
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body" style="height: 400px;">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <!-- </div>
+    </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body" style="height: 400px;">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <!-- </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      background-color: #333;
+      padding: 28px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #555;
+    }
+    .center {
+      margin: 0 auto;
+    }
+    .cards-container {
+      display: flex;
+      gap: 80px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .card-description {
+      font-size: 14px;
+      color: #555;
+      margin: 10px 0;
+    }
+    .card-buttons {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+    .card-buttons button {
+      padding: 10px 15px;
+      font-size: 14px;
+      color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .buy-button {
+      background-color: black;
+      border: #333;
+    }
+    .buy-button:hover {
+      background-color: #218838;
+    }
+    .cart-button {
+      background-color: black;
+    }
+    .cart-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li class="center"><a href="#categories">Categories</a></li>
+    <li><a href="#cart">Cart</a></li>
+  </ul>
+</nav>
+
+
+<!-- Card 1 -->
+<div class="cards-container" style="position: relative; top: 100px;">
+  <div style="position: relative; right: 50px;">
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1142358994/photo/cool-teenager-in-barcelona-old-town.jpg?s=2048x2048&w=is&k=20&c=j72X28ozaXYN18vLPjmRM9tprT_KlDCWkkriS9h6oRU=" alt="Product 1">
+        <div class="card-content">
+          <div class="card-title">Jeans Jocket</div>
+          <div class="card-description">This is a description of Product 1. It's a great product Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis animi placeat?</div>
+          <div class="card-buttons">
+            <button class="buy-button">Buy</button>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div>
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2024/06/13/05/31/men-8826710_640.jpg" alt="Product 2">
+        <div class="card-content">
+          <div class="card-title">T-shirt</div>
+          <div class="card-description">This is a description of Product 2. It's a great product Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit in voluptate..</div>
+          <div class="card-buttons">
+            <button class="buy-button">Buy</button>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div>
+    <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2019/12/11/21/12/portrait-4689312_960_720.jpg" alt="Product 3">
+    <div class="card-content">
+      <div class="card-title">Shirt</div>
+      <div class="card-description">This is a description of Product 3. It's a great product. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ut nobis suscipit.</div>
+      <div class="card-buttons">
+        <button class="buy-button">Buy</button>
+        <button class="cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+
+</body>
+</html>
