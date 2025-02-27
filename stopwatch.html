@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #timedisplay{
+          position: relative;
+          top: 300px;
+          left: 160px;
+          font-size: x-large;
+          font-family: monospace;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+        }
+        #buttons{
+            position: relative;
+            top: 380px;
+            right: 120px;
+           
+        }
+        #pauseTime{
+            height: 30px;
+            width: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        #startTime{
+            height: 30px;
+            width: 100px;
+            background-color: green;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        #resetTime{
+            height: 30px;
+            width: 100px;
+            background-color: blue;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="timedisplay">
+      <h1>      00:00:00:000</h1>
+        </div> 
+        <div id="buttons">
+            <button id="pauseTime">pause</button>
+            <button id="startTime">start</button>
+            <button id="resetTime">reset</button>
+             
+        </div>
+    </div>
+ 
+     
+
+    <script>
+        let milliseconds = 0;
+        let seconds = 0;
+        let minutes = 0;
+        let hours = 0;
+        let currentInterval;
+
+        const timerRef = document.getElementById('timedisplay').getElementsByTagName('h1')[0];
+
+        document.getElementById('startTime').addEventListener('click', () => {
+            if (!currentInterval) {
+                currentInterval = setInterval(displayTime, 10);
+            }
+        });
+
+        document.getElementById('pauseTime').addEventListener('click', () => {
+            clearInterval(currentInterval);
+            currentInterval = null;
+        });
+
+        document.getElementById('resetTime').addEventListener('click', () => {
+            clearInterval(currentInterval);
+            currentInterval = null;
+            milliseconds = 0;
+            seconds = 0;
+            minutes = 0;
+            hours = 0;
+            timerRef.innerHTML = '00:00:00:000';
+        });
+
+        function displayTime() {
+            milliseconds += 10;
+
+            if (milliseconds === 1000) {
+                milliseconds = 0;
+                seconds++;
+                if (seconds === 60) {
+                    seconds = 0;
+                    minutes++;
+                    if (minutes === 60) {
+                        minutes = 0;
+                        hours++;
+                    }
+                }
+            }
+
+            let h = hours < 10 ? "0" + hours : hours;
+            let m = minutes < 10 ? "0" + minutes : minutes;
+            let s = seconds < 10 ? "0" + seconds : seconds;
+            let ms = milliseconds < 100 ? (milliseconds < 10 ? "00" + milliseconds : "0" + milliseconds) : milliseconds;
+
+            timerRef.innerHTML = `${h}:${m}:${s}:${ms}`;
+        }
+    </script>
+    
+
+    
+</body>
+</html>
